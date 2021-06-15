@@ -13,7 +13,7 @@ import glob
 parser = argparse.ArgumentParser(description='Argument Parser')
 parser.add_argument('-s', '--short-side', default=768,
                     type=int, help='size of the shorter side of the image')
-parser.add_argument('-m', '--model-weight', default='output/023001.pth',
+parser.add_argument('-m', '--model-weight', default='output/final_weights.pth',
                     type=str, help='path to the file where model weight is saved')
 parser.add_argument('-d', '--device', default='cpu',
                     choices=['cuda', 'cpu'], type=str, help='which device the model is running on')
