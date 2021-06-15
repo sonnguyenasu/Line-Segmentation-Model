@@ -9,3 +9,7 @@ Whole directory demo:
 ```
 python demo.py -t multi -i <image-directory> -o <output-directory> -d <device (Default=cpu)> 
 ```
+
+## Sample image
+
+![test_sample](out/output.jpg)
