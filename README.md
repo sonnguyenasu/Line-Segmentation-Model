@@ -1,4 +1,6 @@
-# LSM
+# LSM: Line Segmentation Model for documented text with multi orientations
+
+## Quick Start
 
 One image demo:
 ```
