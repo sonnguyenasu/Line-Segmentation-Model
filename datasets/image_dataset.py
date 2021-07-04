@@ -123,6 +123,6 @@ class ImageDataset(CoreDataset):
         gt          = self.gts[index]
         w, h        = image.size
         gt          = self._process_gt(gt, h, w)
-        image, gt   = self._preprocess(image, gt, 0.5)
+        image, gt   = self._preprocess(image, gt)
         return image, gt
 
