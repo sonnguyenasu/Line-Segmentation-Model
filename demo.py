@@ -96,7 +96,7 @@ def inference(model, img_name):
 
 
 if __name__ == '__main__':
-    model = UNet(3, 1).to(args.device)
+    model = UNet(3, 1, False).to(args.device)
     model.load_state_dict(torch.load(args.model_weight, map_location=args.device))
     model.eval()
     if args.demo_type == 'single':
