@@ -96,7 +96,8 @@ class ImageDataset(CoreDataset):
         mask_nd = np.expand_dims(mask_nd, axis=2)
         
         if len(img_nd.shape) == 2:
-            img_nd = img_nd.unsquueze(axis=2)
+            img_nd = np.expand_dims(img_nd,axis=2)
+            img_nd = np.repeat(img_nd, 3, axis=2)
 
         # HWC to CHW
         img_trans = img_nd.transpose((2, 0, 1))
